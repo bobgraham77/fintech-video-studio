@@ -36,3 +36,21 @@ const observer = new IntersectionObserver((entries) => {
 }, { rootMargin: '-35% 0px -55% 0px' });
 
 sections.forEach((section) => observer.observe(section));
+
+const featureVideo = document.querySelector('.feature-video-player');
+const videoPlayButton = document.querySelector('.video-play-button');
+
+videoPlayButton?.addEventListener('click', () => {
+  if (!featureVideo) return;
+  if (featureVideo.paused) {
+    featureVideo.play();
+  } else {
+    featureVideo.pause();
+  }
+});
+
+featureVideo?.addEventListener('play', () => {
+  if (videoPlayButton) {
+    videoPlayButton.hidden = true;
+  }
+});
