@@ -13,18 +13,6 @@ document.querySelectorAll('.site-nav a').forEach((link) => {
   });
 });
 
-const form = document.querySelector('#lead-form');
-const successMessage = document.querySelector('.form-success');
-
-form?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const name = formData.get('name');
-  form.reset();
-  successMessage.textContent = `Thanks${name ? `, ${name}` : ''} — your brief is on its way. We’ll get back to you shortly.`;
-  successMessage.classList.add('visible');
-});
-
 const sections = [...document.querySelectorAll('main section[id]')];
 const navLinks = [...document.querySelectorAll('.site-nav a')];
 
@@ -37,20 +25,30 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => observer.observe(section));
 
-const featureVideo = document.querySelector('.feature-video-player');
-const videoPlayButton = document.querySelector('.video-play-button');
+const scanForm = document.querySelector('#scan-form');
+const scanResult = document.querySelector('#scan-result');
+const videoUrl = document.querySelector('#video-url');
+const videoFile = document.querySelector('#video-file');
+const resultLoader = scanResult?.querySelector('.result-loader');
+const resultMessage = scanResult?.querySelector('.result-message');
 
-videoPlayButton?.addEventListener('click', () => {
-  if (!featureVideo) return;
-  if (featureVideo.paused) {
-    featureVideo.play();
-  } else {
-    featureVideo.pause();
-  }
-});
+scanForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const hasUrl = videoUrl?.value.trim();
+  const hasFile = videoFile?.files.length;
 
-featureVideo?.addEventListener('play', () => {
-  if (videoPlayButton) {
-    videoPlayButton.hidden = true;
+  scanResult.classList.add('visible');
+  if (!hasUrl && !hasFile) {
+    resultLoader.textContent = 'ADD A VIDEO TO BEGIN';
+    resultMessage.textContent = 'Paste a YouTube URL or upload a video to surface the moments most likely to lose a buyer.';
+    return;
   }
+
+  resultLoader.textContent = 'RUNNING CONVERSION RULES •••';
+  resultMessage.textContent = 'Extracting buyer signals: hook, clarity, trust, attention and CTA timing…';
+  window.setTimeout(() => {
+    resultLoader.textContent = 'FIRST-PASS ANALYSIS READY';
+    resultMessage.innerHTML = '<strong>3 conversion leaks detected.</strong> Your free preview is ready below. Unlock the complete report for all recommendations, the rewritten script and storyboard blueprint.';
+    document.querySelector('#report')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 950);
 });
