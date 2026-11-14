@@ -4,9 +4,9 @@ import LeadForm from '@/components/LeadForm';
 import VslVideo from '@/components/VslVideo';
 
 export const metadata: Metadata = {
-  title: 'AI Viral School | Become an AI director',
+  title: 'AI Viral School | Never run out of ad creatives again',
   description:
-    'Turn a written script into a ready-to-publish video in as little as 15 minutes — no studio, no filming, no retakes.',
+    'Generate 30+ fresh video ad variations without hiring more editors, managing UGC creators, or waiting weeks for new content.',
   robots: { index: false, follow: false },
 };
 
@@ -36,28 +36,27 @@ export default function LandingPage() {
             Login
           </a>
           <CtaLink href="#lead" location="header" className="lp2-btn lp2-btn-cyan">
-            Get started now
+            Get access now
           </CtaLink>
         </div>
       </header>
 
       <main id="top">
-        {/* ── Hero — Director's chair (ATTENTION) ── */}
+        {/* ── Hero (ATTENTION) ── */}
         <section className="lp2-hero">
-          <p className="lp2-kicker">Director&apos;s chair</p>
+          <p className="lp2-kicker">For agencies</p>
           <h1>
-            <span className="lp2-title-dark">YOUR VIDEO PRODUCTION</span>
+            <span className="lp2-title-dark">NEVER RUN OUT OF</span>
             <br />
-            <span className="lp2-title-cyan">IS HOLDING YOU BACK</span>
+            <span className="lp2-title-cyan">AD CREATIVES AGAIN</span>
           </h1>
           <p className="lp2-sub">
-            If you still need to spend three full days locked in a studio just
-            to record a 20-minute VSL, your sales funnel is already falling
-            behind.
+            Generate 30+ fresh video ad variations without hiring more
+            editors, managing UGC creators, or waiting weeks for new content.
           </p>
           <div className="lp2-hero-actions">
             <CtaLink href="#lead" location="hero" className="lp2-btn lp2-btn-cyan">
-              Get started now
+              Get access now
             </CtaLink>
             <CtaLink
               href="#solution"
@@ -74,7 +73,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ── Chaos vs Clarity (INTEREST) ── */}
+        {/* ── Manual vs Automated (INTEREST) ── */}
         <section className="lp2-section" id="problem">
           <div className="lp2-split">
             <div className="lp2-visual lp2-visual-knot" aria-hidden="true">
@@ -100,61 +99,83 @@ export default function LandingPage() {
                 Manual <span className="lp2-vs-inline">vs</span> Automated
               </h2>
               <p className="lp2-lead-in">
-                The real problem isn&apos;t your equipment.
+                The problem isn&apos;t your targeting. It&apos;s your creatives.
               </p>
               <p>
-                Every day you delay filming is another day your sales funnel
-                isn&apos;t working at its full potential. Delayed launches mean
-                lost revenue, text-only pages leave money on the table, and the
-                production grind — camera anxiety, retakes, complicated setups —
-                slows your growth.
+                Every successful ad has a limited lifespan. As audiences
+                repeatedly see the same creatives, they become desensitized —
+                and performance drops fast:
               </p>
+              <ul className="lp2-pain-list">
+                <li>
+                  <b>Declining purchase intent</b> — above 3.0 impressions per
+                  user, purchase probability can decrease by 4.1%.
+                </li>
+                <li>
+                  <b>Lower click-through rates</b> — repeated exposure can
+                  reduce CTR by as much as 33%.
+                </li>
+                <li>
+                  <b>Rising acquisition costs</b> — CPC can increase by 20%
+                  while CPA climbs dramatically.
+                </li>
+                <li>
+                  <b>Operational bottlenecks</b> — hours spent coordinating
+                  UGC creators, freelancers and revisions.
+                </li>
+              </ul>
               <p>
-                Better gear won&apos;t fix it. You don&apos;t need to become a
-                better video producer —{' '}
-                <strong>you need a smarter production system.</strong>
+                Meanwhile, your clients still expect consistent ROAS. You can&apos;t
+                scale creative testing if you can&apos;t scale creative
+                production.{' '}
+                <strong>
+                  You&apos;re running an automated advertising business with a
+                  manual creative process.
+                </strong>
               </p>
               <CtaLink
                 href="#lead"
                 location="chaos"
                 className="lp2-btn lp2-btn-cyan"
               >
-                Untangle my production
+                Fix my production
               </CtaLink>
             </div>
           </div>
         </section>
 
-        {/* ── VS cards (Before vs After) ── */}
+        {/* ── VS cards ── */}
         <section className="lp2-section">
           <div className="lp2-versus">
             <article className="lp2-card lp2-card-magenta">
-              <span className="lp2-card-tag">Traditional Production</span>
+              <span className="lp2-card-tag">Traditional Agency Workflow</span>
               <h3>TRADITIONAL</h3>
               <p>
-                Days of studio time, expensive gear, editor queues — for a
-                single video.
+                UGC queues, editor backlogs and creatives that die before the
+                next batch arrives.
               </p>
               <ul>
-                <li>2–4 days per VSL</li>
-                <li>€1,800–€3,000 per video</li>
-                <li>2–3% conversion on text pages</li>
-                <li>Camera anxiety &amp; endless retakes</li>
+                <li>Creative refresh every 2–3 weeks</li>
+                <li>7–14 business days per UGC video</li>
+                <li>CTR declining up to 33% with fatigue</li>
+                <li>CPA climbing 20–100% on tired creatives</li>
+                <li>Testing limited by production resources</li>
               </ul>
             </article>
             <div className="lp2-vs-badge">VS</div>
             <article className="lp2-card lp2-card-cyan">
-              <span className="lp2-card-tag">AI Video Engine</span>
-              <h3>THE NEW ERA SYSTEM</h3>
+              <span className="lp2-card-tag">AI Creative Production</span>
+              <h3>THE NEW SYSTEM</h3>
               <p>
-                Script in, video out — automated from first word to published
-                file.
+                Script in, video out — a continuous engine for fresh hooks,
+                faces and angles.
               </p>
               <ul>
-                <li>As little as 15 minutes per VSL</li>
-                <li>Primarily software/export costs</li>
-                <li>10–15% conversion on dynamic VSL pages</li>
-                <li>No filming, no editing, no retakes</li>
+                <li>Continuous refresh, every 24–48 hours</li>
+                <li>Less than 60 minutes per creative</li>
+                <li>Frequent testing of hooks and variations</li>
+                <li>Up to 80% lower production costs</li>
+                <li>Scalable generation of multiple variations</li>
               </ul>
               <CtaLink
                 href="#lead"
@@ -166,12 +187,12 @@ export default function LandingPage() {
             </article>
           </div>
           <p className="lp2-disclaimer">
-            Illustrative benchmarks based on the referenced performance
-            figures. Individual results will vary.
+            These figures represent referenced benchmarks and operational
+            targets, not guaranteed campaign outcomes.
           </p>
         </section>
 
-        {/* ── Persuasion Iceberg (DESIRE) ── */}
+        {/* ── The AI Engine (DESIRE) ── */}
         <section className="lp2-section" id="solution">
           <div className="lp2-split lp2-split-reverse">
             <div className="lp2-copy">
@@ -181,13 +202,14 @@ export default function LandingPage() {
                 ENGINE
               </h2>
               <p className="lp2-lead-in">
-                Meet your AI-powered video production engine.
+                Your AI-powered creative production engine.
               </p>
               <p>
-                Turn a written script into a professional, ready-to-publish
-                video in as little as 15 minutes. No studio. No filming
-                sessions. No retakes — just your script, your AI avatar, and a
-                video ready for your campaigns.
+                Turn a product URL or advertising script into a ready-to-launch
+                video creative in less than 60 minutes — without coordinating
+                UGC creators, waiting for editors, or managing endless
+                production requests. One product. Multiple angles. Multiple
+                faces. Endless creative possibilities.
               </p>
             </div>
             <div className="lp2-visual lp2-visual-iceberg">
@@ -198,22 +220,27 @@ export default function LandingPage() {
               </svg>
               <ul className="lp2-annotations">
                 <li>
-                  <b>Step 1</b> — upload your script or product URL
+                  <b>Step 1</b> — paste your client&apos;s URL or script
                 </li>
                 <li>
-                  <b>Step 2</b> — generate your AI avatar and voice
+                  <b>Step 2</b> — generate AI actors and voices per persona,
+                  angle and hook
                 </li>
                 <li>
-                  <b>Step 3</b> — generate and export your video
+                  <b>Step 3</b> — export ready-to-launch ad formats
                 </li>
                 <li>
-                  <b>Result</b> — HD visuals, voiceover, subtitles
+                  <b>Result</b> — concept to creative without filming or
+                  editing
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="lp2-numbers">
+            <h3 className="lp2-h3">
+              The numbers behind AI-powered creative production
+            </h3>
             <div className="lp2-num-grid">
               <div>
                 <strong>-80%</strong>
@@ -221,83 +248,93 @@ export default function LandingPage() {
               </div>
               <div>
                 <strong>24–48h</strong>
-                <span>to spot winning creatives (5 variations)</span>
+                <span>to identify winning creatives (5 variations)</span>
               </div>
               <div>
-                <strong>10–15%</strong>
-                <span>conversion vs 2–3% text pages</span>
+                <strong>&lt;60min</strong>
+                <span>per creative vs 7–14 days of UGC production</span>
               </div>
             </div>
             <p className="lp2-disclaimer">
-              Actual results depend on your offer, audience, creative quality,
-              traffic source, and implementation.
+              Performance figures are illustrative benchmarks and may vary
+              depending on campaign conditions, platform requirements, creative
+              quality, and implementation.
             </p>
           </div>
 
           <div className="lp2-stop">
             <h3 className="lp2-h3" style={{ textAlign: 'left' }}>
-              STOP wasting time on outdated production methods
+              STOP throwing money at outdated creative production
             </h3>
             <ul>
               <li>
-                Stop investing thousands in audiovisual equipment. Better
-                cameras won&apos;t eliminate the filming process.
+                <b>Stop depending on expensive UGC agencies.</b> High recurring
+                costs, 7–14 day deliveries, limited creator availability and
+                endless revisions — by the time creatives arrive, your campaign
+                needs another round of testing.
               </li>
               <li>
-                Stop relying entirely on freelance video editors. Waiting 7–14
-                days makes rapid creative testing difficult.
+                <b>Stop hiring more video editors.</b> More editing capacity
+                doesn&apos;t create new faces, fresh footage or new creative
+                concepts — it just raises your fixed costs.
               </li>
               <li>
-                Stop using static slides with voiceovers. Limited engagement
-                loses your prospect&apos;s attention.
+                <b>Stop tweaking targeting to fix creative fatigue.</b>{' '}
+                Sometimes the problem isn&apos;t the audience — it&apos;s the
+                ad they&apos;ve already seen too many times.
               </li>
             </ul>
           </div>
         </section>
 
-        {/* ── Empire of Bricks (ACTION) ── */}
+        {/* ── Stop wasting your budget (ACTION) ── */}
         <section className="lp2-section" id="offer">
           <div className="lp2-split">
             <div className="lp2-copy">
               <h2>
-                Empire
+                STOP WASTING
                 <br />
-                of Bricks
+                YOUR BUDGET
               </h2>
               <p className="lp2-lead-in">
-                Stop paying the price of doing nothing.
+                Every day you delay, your competitors get faster.
               </p>
               <p>
-                Every day you rely on manual production, you accept costs far
-                beyond the price of a video — for infopreneurs: lost hours,
-                delayed launches, starving funnels. For agencies: fatigued
-                creatives, doubling CPA, clients lost to faster competitors.
+                The cost of doing nothing goes far beyond the price of another
+                UGC video: budgets become less efficient as creatives fatigue,
+                your team gets trapped in production management instead of
+                strategy, and faster competitors take your clients.
               </p>
               <p>
-                The real cost isn&apos;t what you spend —{' '}
-                <strong>
-                  it&apos;s what your business loses while you&apos;re still
-                  doing it manually.
-                </strong>
+                The agencies that scale tomorrow will be the ones that{' '}
+                <strong>solve creative production today.</strong>
               </p>
               <CtaLink
                 href="#lead"
                 location="empire"
                 className="lp2-btn lp2-btn-cyan"
               >
-                Automate my production
+                Scale my production
               </CtaLink>
             </div>
             <div className="lp2-visual lp2-visual-empire" aria-hidden="true">
               <div className="lp2-empire-grid">
-                <div className="lp2-tile lp2-tile-main">INFOPRENEURS</div>
-                <div className="lp2-tile">Hours lost filming</div>
-                <div className="lp2-tile">Delayed launches</div>
-                <div className="lp2-tile">Weak funnels</div>
-                <div className="lp2-tile lp2-tile-main">AGENCIES</div>
-                <div className="lp2-tile">Ad fatigue</div>
-                <div className="lp2-tile">Rising CPA</div>
-                <div className="lp2-tile">Slow testing</div>
+                <div className="lp2-tile lp2-tile-main">
+                  COST OF DOING NOTHING
+                </div>
+                <div className="lp2-tile">
+                  Budgets losing efficiency
+                </div>
+                <div className="lp2-tile">
+                  Team trapped in production
+                </div>
+                <div className="lp2-tile">
+                  Competitors testing faster
+                </div>
+                <div className="lp2-tile lp2-tile-main">WITH AI ENGINE</div>
+                <div className="lp2-tile">30+ variations</div>
+                <div className="lp2-tile">&lt;60 min per creative</div>
+                <div className="lp2-tile">-80% costs</div>
               </div>
             </div>
           </div>
@@ -308,18 +345,19 @@ export default function LandingPage() {
             <p>
               If your video production speed isn&apos;t multiplied by at least
               5x, you can request a refund within 30 days, subject to the
-              applicable guarantee terms. No unnecessary risk — just a faster
-              way to create videos.
+              applicable guarantee terms. Reduce production bottlenecks,
+              increase creative output, and give your agency a faster way to
+              serve its clients.
             </p>
           </div>
 
           <div className="lp2-scarcity">
             <p>
-              <strong>Limited monthly availability.</strong> Onboarding is
-              limited to a selected number of businesses each month to ensure
-              proper AI avatar setup. Don&apos;t wait until your competitors
-              produce five times more content while you&apos;re still
-              scheduling your next filming session.
+              <strong>Limited monthly onboarding.</strong> We limit the number
+              of agencies onboarded each month to ensure proper configuration
+              of AI avatar models and creative workflows. Don&apos;t let
+              outdated production workflows become the reason your agency loses
+              its competitive edge.
             </p>
           </div>
         </section>
@@ -330,32 +368,59 @@ export default function LandingPage() {
             <h2>Frequently Asked Questions</h2>
             <div className="faq-list">
               <details>
-                <summary>Will my AI avatar look fake or robotic?</summary>
+                <summary>
+                  Will AI-generated actors look artificial or unrealistic?
+                </summary>
                 <p>
                   Not with today&apos;s latest-generation avatar technology.
-                  Advanced solutions can create highly realistic digital
-                  replicas from a video sample as short as 15 seconds —
+                  Advanced solutions can generate highly realistic digital
+                  presenters from a video sample as short as 15 seconds —
                   synchronized lip movements, facial expressions and natural
-                  delivery.
+                  delivery. Your agency gets a wider range of creative
+                  identities without new filming sessions.
                 </p>
               </details>
               <details>
                 <summary>
-                  Could AI-generated videos get rejected by ad platforms?
+                  Can AI-generated videos be used on Meta, TikTok and Google
+                  Ads?
                 </summary>
                 <p>
-                  Videos are generated in formats designed to meet the
-                  technical specs of major platforms including Meta, TikTok and
-                  Google. Acceptance depends on each platform&apos;s current
-                  policies, disclosure requirements and content guidelines.
+                  Yes — videos are exported in formats designed to meet major
+                  platforms&apos; technical specifications. However, technical
+                  compatibility does not guarantee approval: all creatives must
+                  comply with each platform&apos;s advertising policies and AI
+                  disclosure requirements.
                 </p>
               </details>
               <details>
-                <summary>Do I need technical or editing skills?</summary>
+                <summary>
+                  Does my team need advanced video editing skills?
+                </summary>
                 <p>
-                  Absolutely not. Enter your text, configure your avatar, and
-                  let the system handle generation. No editing software
-                  expertise required.
+                  No. Your team enters a script or product URL, selects a
+                  virtual presenter, and generates the finished video. No
+                  editing skills, filming equipment or complicated workflows
+                  required.
+                </p>
+              </details>
+              <details>
+                <summary>Can I use this system for multiple clients?</summary>
+                <p>
+                  The system is designed for agency workflows — generate
+                  different concepts, presenters, scripts and variations per
+                  client campaign, without increasing reliance on external
+                  creators and editors.
+                </p>
+              </details>
+              <details>
+                <summary>Can I produce variations for A/B testing?</summary>
+                <p>
+                  Absolutely — generate multiple variations with different
+                  hooks, scripts, presenters and angles to identify promising
+                  performers and iterate on campaign data. The objective
+                  isn&apos;t just more videos — it&apos;s more opportunities to
+                  find winning creatives.
                 </p>
               </details>
             </div>
@@ -367,15 +432,19 @@ export default function LandingPage() {
           <div className="lead-card">
             <p className="eyebrow">Your next move</p>
             <h2>
-              Your next VSL shouldn&apos;t take <em>three days.</em>
+              Scale your creative production.
               <br />
-              It should take <em>minutes.</em>
+              <em>Not your overhead.</em>
             </h2>
             <p>
-              Automate your video production, launch faster, test more
-              creatives, and scale without being held back by a camera.
+              Your clients need fresh creatives. Your team needs more capacity.
+              Generate more creatives, test more angles, refresh campaigns
+              faster — and scale your agency.
             </p>
             <LeadForm />
+            <p className="lp2-micro" style={{ marginTop: 18 }}>
+              Get access to your AI creative production engine now
+            </p>
           </div>
         </section>
       </main>
@@ -385,8 +454,8 @@ export default function LandingPage() {
         <div>
           <strong>AI Viral School</strong>
           <p>
-            AI-powered video production for infopreneurs and marketing
-            agencies. From script to published video in minutes.
+            AI-powered creative production for agencies. From script to
+            ready-to-launch ad creatives in minutes.
           </p>
         </div>
         <div>
