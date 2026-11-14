@@ -5,7 +5,7 @@ import SiteFooter from '@/components/SiteFooter';
 import SiteHeader from '@/components/SiteHeader';
 
 export const metadata: Metadata = {
-  title: 'AI Springboard | Conversion Leak Scanner',
+  title: 'AI Viral School | Conversion Leak Scanner',
   description:
     'Find the conversion leaks in your marketing video before buyers do. AI-powered business audit for fintech, crypto, SaaS and B2B technology teams.',
 };

@@ -12,14 +12,14 @@ export default function SiteFooter({
       <Link className="brand" href="/">
         <img className="brand-logo" src="/assets/ai-springboard-logo.png" alt="" />
         <span>
-          AI SPRINGBOARD
+          AI VIRAL SCHOOL
           <br />
           <small>{tagline}</small>
         </span>
       </Link>
       <div>
         <p>{baseline}</p>
-        <span>© 2026 AI Springboard</span>
+        <span>© 2026 AI Viral School</span>
       </div>
       <div className="footer-links">
         <a href="mailto:hello@aispringboard.com">hello@aispringboard.com</a>

@@ -4,9 +4,9 @@ import LeadForm from '@/components/LeadForm';
 import VslVideo from '@/components/VslVideo';
 
 export const metadata: Metadata = {
-  title: 'AI Springboard | Become the director of your product story',
+  title: 'AI Viral School | Become an AI director',
   description:
-    'We turn complex fintech and B2B SaaS products into clear, high-converting explainer videos — scripted, produced and delivered in 7 days.',
+    'Turn a written script into a ready-to-publish video in as little as 15 minutes — no studio, no filming, no retakes.',
   robots: { index: false, follow: false },
 };
 
@@ -21,14 +21,14 @@ export default function LandingPage() {
         <a className="lp2-logo" href="#top">
           <img src="/assets/ai-springboard-logo.png" alt="" />
           <span>
-            AI SPRINGBOARD
+            AI VIRAL SCHOOL
             <small>AI VIDEO STUDIO</small>
           </span>
         </a>
         <nav className="lp2-nav">
+          <a href="#problem">Problem</a>
+          <a href="#solution">Solution</a>
           <a href="#offer">Offer</a>
-          <a href="#process">Process</a>
-          <a href="#proof">Proof</a>
           <a href="#faq">FAQ</a>
         </nav>
         <div className="lp2-header-actions">
@@ -36,34 +36,35 @@ export default function LandingPage() {
             Login
           </a>
           <CtaLink href="#lead" location="header" className="lp2-btn lp2-btn-cyan">
-            Get my brief
+            Get started now
           </CtaLink>
         </div>
       </header>
 
       <main id="top">
-        {/* ── Hero — Director's chair ── */}
+        {/* ── Hero — Director's chair (ATTENTION) ── */}
         <section className="lp2-hero">
           <p className="lp2-kicker">Director&apos;s chair</p>
           <h1>
-            <span className="lp2-title-dark">BECOME YOUR</span>
+            <span className="lp2-title-dark">YOUR VIDEO PRODUCTION</span>
             <br />
-            <span className="lp2-title-cyan">AI VIDEO DIRECTOR</span>
+            <span className="lp2-title-cyan">IS HOLDING YOU BACK</span>
           </h1>
           <p className="lp2-sub">
-            We turn complex products into cinematic explainer videos that
-            convert — script, motion, voice and sound, delivered in 7 days.
+            If you still need to spend three full days locked in a studio just
+            to record a 20-minute VSL, your sales funnel is already falling
+            behind.
           </p>
           <div className="lp2-hero-actions">
             <CtaLink href="#lead" location="hero" className="lp2-btn lp2-btn-cyan">
-              Get my video brief
+              Get started now
             </CtaLink>
             <CtaLink
-              href="#offer"
+              href="#solution"
               location="hero_secondary"
               className="lp2-btn lp2-btn-ghost"
             >
-              See the offer
+              See how it works
             </CtaLink>
           </div>
           <div className="lp2-hero-visual">
@@ -73,8 +74,8 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ── Chaos vs Clarity ── */}
-        <section className="lp2-section" id="offer">
+        {/* ── Chaos vs Clarity (INTEREST) ── */}
+        <section className="lp2-section" id="problem">
           <div className="lp2-split">
             <div className="lp2-visual lp2-visual-knot" aria-hidden="true">
               <svg viewBox="0 0 400 260" className="lp2-knot-svg">
@@ -96,84 +97,97 @@ export default function LandingPage() {
             </div>
             <div className="lp2-copy">
               <h2>
-                Chaos <span className="lp2-vs-inline">vs</span> Clarity
+                Manual <span className="lp2-vs-inline">vs</span> Automated
               </h2>
+              <p className="lp2-lead-in">
+                The real problem isn&apos;t your equipment.
+              </p>
               <p>
-                Your product is powerful — but to a cold visitor it&apos;s a
-                knot of features, jargon and pricing tiers. We untangle it into
-                one clear story a buyer understands in 90 seconds.
+                Every day you delay filming is another day your sales funnel
+                isn&apos;t working at its full potential. Delayed launches mean
+                lost revenue, text-only pages leave money on the table, and the
+                production grind — camera anxiety, retakes, complicated setups —
+                slows your growth.
+              </p>
+              <p>
+                Better gear won&apos;t fix it. You don&apos;t need to become a
+                better video producer —{' '}
+                <strong>you need a smarter production system.</strong>
               </p>
               <CtaLink
                 href="#lead"
                 location="chaos"
                 className="lp2-btn lp2-btn-cyan"
               >
-                Untangle my product
+                Untangle my production
               </CtaLink>
             </div>
           </div>
         </section>
 
-        {/* ── VS cards ── */}
+        {/* ── VS cards (Before vs After) ── */}
         <section className="lp2-section">
           <div className="lp2-versus">
-            <article className="lp2-card lp2-card-cyan">
-              <span className="lp2-card-tag">Before</span>
-              <h3>The pitch that loses them</h3>
+            <article className="lp2-card lp2-card-magenta">
+              <span className="lp2-card-tag">Traditional Production</span>
+              <h3>TRADITIONAL</h3>
               <p>
-                Ten minutes of feature tour, three tabs of documentation, and a
-                &quot;let me explain how it works&quot; on every call.
+                Days of studio time, expensive gear, editor queues — for a
+                single video.
               </p>
               <ul>
-                <li>Visitors bounce before the value lands</li>
-                <li>Ads pay for clicks that never convert</li>
-                <li>Sales repeats the same intro daily</li>
+                <li>2–4 days per VSL</li>
+                <li>€1,800–€3,000 per video</li>
+                <li>2–3% conversion on text pages</li>
+                <li>Camera anxiety &amp; endless retakes</li>
               </ul>
-              <CtaLink
-                href="#lead"
-                location="versus_before"
-                className="lp2-btn lp2-btn-cyan"
-              >
-                Fix this
-              </CtaLink>
             </article>
             <div className="lp2-vs-badge">VS</div>
-            <article className="lp2-card lp2-card-magenta">
-              <span className="lp2-card-tag">After</span>
-              <h3>The story that sells them</h3>
+            <article className="lp2-card lp2-card-cyan">
+              <span className="lp2-card-tag">AI Video Engine</span>
+              <h3>THE NEW ERA SYSTEM</h3>
               <p>
-                One cinematic video that hooks, explains and closes — working
-                on your page, your ads and your sales calls.
+                Script in, video out — automated from first word to published
+                file.
               </p>
               <ul>
-                <li>Product understood in 90 seconds</li>
-                <li>Ad traffic finally converts</li>
-                <li>Calls start with &quot;how do we start?&quot;</li>
+                <li>As little as 15 minutes per VSL</li>
+                <li>Primarily software/export costs</li>
+                <li>10–15% conversion on dynamic VSL pages</li>
+                <li>No filming, no editing, no retakes</li>
               </ul>
               <CtaLink
                 href="#lead"
                 location="versus_after"
-                className="lp2-btn lp2-btn-magenta"
+                className="lp2-btn lp2-btn-cyan"
               >
-                Get this
+                Switch to AI
               </CtaLink>
             </article>
           </div>
+          <p className="lp2-disclaimer">
+            Illustrative benchmarks based on the referenced performance
+            figures. Individual results will vary.
+          </p>
         </section>
 
-        {/* ── Persuasion Iceberg ── */}
-        <section className="lp2-section">
+        {/* ── Persuasion Iceberg (DESIRE) ── */}
+        <section className="lp2-section" id="solution">
           <div className="lp2-split lp2-split-reverse">
             <div className="lp2-copy">
               <h2>
-                Persuasion
+                THE AI
                 <br />
-                Iceberg
+                ENGINE
               </h2>
+              <p className="lp2-lead-in">
+                Meet your AI-powered video production engine.
+              </p>
               <p>
-                The script is 20% of what makes a video convert. The rest is
-                invisible: pacing, sound, proof timing and the exact frame your
-                buyer doubts you. That&apos;s where we work.
+                Turn a written script into a professional, ready-to-publish
+                video in as little as 15 minutes. No studio. No filming
+                sessions. No retakes — just your script, your AI avatar, and a
+                video ready for your campaigns.
               </p>
             </div>
             <div className="lp2-visual lp2-visual-iceberg">
@@ -184,24 +198,65 @@ export default function LandingPage() {
               </svg>
               <ul className="lp2-annotations">
                 <li>
-                  <b>Hook</b> — first 3 seconds decide everything
+                  <b>Step 1</b> — upload your script or product URL
                 </li>
                 <li>
-                  <b>Problem framing</b> — the pain they already feel
+                  <b>Step 2</b> — generate your AI avatar and voice
                 </li>
                 <li>
-                  <b>Mechanism</b> — why your way works
+                  <b>Step 3</b> — generate and export your video
                 </li>
                 <li>
-                  <b>Proof &amp; CTA</b> — doubt handled, action taken
+                  <b>Result</b> — HD visuals, voiceover, subtitles
                 </li>
               </ul>
             </div>
           </div>
+
+          <div className="lp2-numbers">
+            <div className="lp2-num-grid">
+              <div>
+                <strong>-80%</strong>
+                <span>video production costs</span>
+              </div>
+              <div>
+                <strong>24–48h</strong>
+                <span>to spot winning creatives (5 variations)</span>
+              </div>
+              <div>
+                <strong>10–15%</strong>
+                <span>conversion vs 2–3% text pages</span>
+              </div>
+            </div>
+            <p className="lp2-disclaimer">
+              Actual results depend on your offer, audience, creative quality,
+              traffic source, and implementation.
+            </p>
+          </div>
+
+          <div className="lp2-stop">
+            <h3 className="lp2-h3" style={{ textAlign: 'left' }}>
+              STOP wasting time on outdated production methods
+            </h3>
+            <ul>
+              <li>
+                Stop investing thousands in audiovisual equipment. Better
+                cameras won&apos;t eliminate the filming process.
+              </li>
+              <li>
+                Stop relying entirely on freelance video editors. Waiting 7–14
+                days makes rapid creative testing difficult.
+              </li>
+              <li>
+                Stop using static slides with voiceovers. Limited engagement
+                loses your prospect&apos;s attention.
+              </li>
+            </ul>
+          </div>
         </section>
 
-        {/* ── Empire of Bricks ── */}
-        <section className="lp2-section" id="proof">
+        {/* ── Empire of Bricks (ACTION) ── */}
+        <section className="lp2-section" id="offer">
           <div className="lp2-split">
             <div className="lp2-copy">
               <h2>
@@ -209,83 +264,116 @@ export default function LandingPage() {
                 <br />
                 of Bricks
               </h2>
+              <p className="lp2-lead-in">
+                Stop paying the price of doing nothing.
+              </p>
               <p>
-                One production, an entire system of assets. Your hero video,
-                three ad cutdowns, thumbnails and the script — a fortress of
-                content built in a single week.
+                Every day you rely on manual production, you accept costs far
+                beyond the price of a video — for infopreneurs: lost hours,
+                delayed launches, starving funnels. For agencies: fatigued
+                creatives, doubling CPA, clients lost to faster competitors.
+              </p>
+              <p>
+                The real cost isn&apos;t what you spend —{' '}
+                <strong>
+                  it&apos;s what your business loses while you&apos;re still
+                  doing it manually.
+                </strong>
               </p>
               <CtaLink
                 href="#lead"
                 location="empire"
                 className="lp2-btn lp2-btn-cyan"
               >
-                Build my assets
+                Automate my production
               </CtaLink>
             </div>
             <div className="lp2-visual lp2-visual-empire" aria-hidden="true">
               <div className="lp2-empire-grid">
-                <div className="lp2-tile lp2-tile-main">HERO VIDEO</div>
-                <div className="lp2-tile">15s CUT</div>
-                <div className="lp2-tile">30s CUT</div>
-                <div className="lp2-tile">60s CUT</div>
-                <div className="lp2-tile">SCRIPT</div>
-                <div className="lp2-tile">THUMBS</div>
+                <div className="lp2-tile lp2-tile-main">INFOPRENEURS</div>
+                <div className="lp2-tile">Hours lost filming</div>
+                <div className="lp2-tile">Delayed launches</div>
+                <div className="lp2-tile">Weak funnels</div>
+                <div className="lp2-tile lp2-tile-main">AGENCIES</div>
+                <div className="lp2-tile">Ad fatigue</div>
+                <div className="lp2-tile">Rising CPA</div>
+                <div className="lp2-tile">Slow testing</div>
               </div>
             </div>
+          </div>
+
+          <div className="lp2-guarantee">
+            <span className="lp2-guarantee-badge">30-day guarantee</span>
+            <h3>Try it risk-free</h3>
+            <p>
+              If your video production speed isn&apos;t multiplied by at least
+              5x, you can request a refund within 30 days, subject to the
+              applicable guarantee terms. No unnecessary risk — just a faster
+              way to create videos.
+            </p>
+          </div>
+
+          <div className="lp2-scarcity">
+            <p>
+              <strong>Limited monthly availability.</strong> Onboarding is
+              limited to a selected number of businesses each month to ensure
+              proper AI avatar setup. Don&apos;t wait until your competitors
+              produce five times more content while you&apos;re still
+              scheduling your next filming session.
+            </p>
           </div>
         </section>
 
         {/* ── FAQ ── */}
         <section className="lp2-section" id="faq">
           <div className="lp2-faq">
-            <h2>
-              Know before
-              <br />
-              you direct.
-            </h2>
+            <h2>Frequently Asked Questions</h2>
             <div className="faq-list">
               <details>
-                <summary>How fast is it really?</summary>
+                <summary>Will my AI avatar look fake or robotic?</summary>
                 <p>
-                  Seven calendar days from brief validation to final delivery.
-                  You approve the script before production starts.
+                  Not with today&apos;s latest-generation avatar technology.
+                  Advanced solutions can create highly realistic digital
+                  replicas from a video sample as short as 15 seconds —
+                  synchronized lip movements, facial expressions and natural
+                  delivery.
                 </p>
               </details>
               <details>
-                <summary>Do I need footage of my product?</summary>
+                <summary>
+                  Could AI-generated videos get rejected by ad platforms?
+                </summary>
                 <p>
-                  Screen recordings help but aren&apos;t required — we can work
-                  from your UI, a demo account or existing assets.
+                  Videos are generated in formats designed to meet the
+                  technical specs of major platforms including Meta, TikTok and
+                  Google. Acceptance depends on each platform&apos;s current
+                  policies, disclosure requirements and content guidelines.
                 </p>
               </details>
               <details>
-                <summary>What does it cost?</summary>
+                <summary>Do I need technical or editing skills?</summary>
                 <p>
-                  Scope-dependent. Leave your email and we&apos;ll send the
-                  rate card plus available production slots.
-                </p>
-              </details>
-              <details>
-                <summary>Who owns the result?</summary>
-                <p>
-                  You do — full commercial rights on every asset, script
-                  included.
+                  Absolutely not. Enter your text, configure your avatar, and
+                  let the system handle generation. No editing software
+                  expertise required.
                 </p>
               </details>
             </div>
           </div>
         </section>
 
-        {/* ── Lead ── */}
+        {/* ── YOUR NEXT MOVE ── */}
         <section className="lp2-section lp2-lead" id="lead">
           <div className="lead-card">
-            <p className="eyebrow">Limited production slots</p>
+            <p className="eyebrow">Your next move</p>
             <h2>
-              Take the <em>director&apos;s seat.</em>
+              Your next VSL shouldn&apos;t take <em>three days.</em>
+              <br />
+              It should take <em>minutes.</em>
             </h2>
             <p>
-              Leave your work email — we&apos;ll send the rate card and the
-              next available production slot.
+              Automate your video production, launch faster, test more
+              creatives, and scale without being held back by a camera.
             </p>
             <LeadForm />
           </div>
@@ -295,10 +383,10 @@ export default function LandingPage() {
       {/* ── Footer ── */}
       <footer className="lp2-footer">
         <div>
-          <strong>AI Springboard</strong>
+          <strong>AI Viral School</strong>
           <p>
-            Cinematic explainer videos for fintech and B2B SaaS teams.
-            Delivered in 7 days.
+            AI-powered video production for infopreneurs and marketing
+            agencies. From script to published video in minutes.
           </p>
         </div>
         <div>
@@ -310,7 +398,7 @@ export default function LandingPage() {
         <div>
           <span>Contact</span>
           <a href="mailto:hello@aispringboard.com">hello@aispringboard.com</a>
-          <p>© 2026 AI Springboard</p>
+          <p>© 2026 AI Viral School</p>
         </div>
       </footer>
     </div>

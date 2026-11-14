@@ -13,10 +13,10 @@ export default function SiteHeader({
 }: Props) {
   return (
     <header className="site-header">
-      <Link className="brand" href="/" aria-label="AI Springboard home">
+      <Link className="brand" href="/" aria-label="AI Viral School home">
         <img className="brand-logo" src="/assets/ai-springboard-logo.png" alt="" />
         <span>
-          AI SPRINGBOARD
+          AI VIRAL SCHOOL
           <br />
           <small>{tagline}</small>
         </span>

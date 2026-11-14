@@ -53,7 +53,7 @@ export default async function ArticlePage({ params }: Props) {
     headline: article.title,
     description: article.description,
     datePublished: article.date,
-    author: { '@type': 'Organization', name: 'AI Springboard' },
+    author: { '@type': 'Organization', name: 'AI Viral School' },
   };
 
   return (

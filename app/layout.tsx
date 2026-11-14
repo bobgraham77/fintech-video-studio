@@ -21,13 +21,13 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'AI Springboard | Turn Tech Into Trust',
-    template: '%s — AI Springboard',
+    default: 'AI Viral School | Turn Tech Into Trust',
+    template: '%s — AI Viral School',
   },
   description:
-    'AI Springboard creates premium AI-assisted explainer videos for fintech and B2B SaaS teams. Turn complex software into clear, high-converting video in 7 days.',
+    'AI Viral School creates premium AI-assisted explainer videos for fintech and B2B SaaS teams. Turn complex software into clear, high-converting video in 7 days.',
   openGraph: {
-    siteName: 'AI Springboard',
+    siteName: 'AI Viral School',
     type: 'website',
   },
 };

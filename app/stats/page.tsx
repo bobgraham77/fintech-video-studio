@@ -168,7 +168,7 @@ export default async function StatsPage({
 
   return (
     <div className="stats-page">
-      <h1>Funnel — AI Springboard</h1>
+      <h1>Funnel — AI Viral School</h1>
       <p className="sub">
         {days} derniers jours ·{' '}
         {[7, 14, 30].map((d) => (
