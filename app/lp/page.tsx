@@ -165,7 +165,7 @@ export default function LandingPage() {
             <div className="lp2-vs-badge">VS</div>
             <article className="lp2-card lp2-card-cyan">
               <span className="lp2-card-tag">AI Creative Production</span>
-              <h3>THE NEW SYSTEM</h3>
+              <h3>AI-POWERED SYSTEM</h3>
               <p>
                 Script in, video out — a continuous engine for fresh hooks,
                 faces and angles.
